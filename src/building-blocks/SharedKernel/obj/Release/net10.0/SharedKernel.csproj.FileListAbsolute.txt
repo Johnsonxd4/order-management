@@ -1,0 +1,12 @@
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/obj/Release/net10.0/SharedKernel.csproj.AssemblyReference.cache
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/obj/Release/net10.0/SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/obj/Release/net10.0/SharedKernel.AssemblyInfoInputs.cache
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/obj/Release/net10.0/SharedKernel.AssemblyInfo.cs
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/obj/Release/net10.0/SharedKernel.csproj.CoreCompileInputs.cache
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/bin/Release/net10.0/SharedKernel.deps.json
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/bin/Release/net10.0/SharedKernel.dll
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/bin/Release/net10.0/SharedKernel.pdb
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/obj/Release/net10.0/SharedKernel.dll
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/obj/Release/net10.0/refint/SharedKernel.dll
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/obj/Release/net10.0/SharedKernel.pdb
+/home/johnson/sources/csharp/order-management/src/building-blocks/SharedKernel/obj/Release/net10.0/ref/SharedKernel.dll

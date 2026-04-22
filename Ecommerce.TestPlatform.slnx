@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/src/" />
+  <Folder Name="/src/building-blocks/">
+    <Project Path="src/building-blocks/SharedKernel/SharedKernel.csproj" />
+  </Folder>
+  <Folder Name="/src/services/">
+    <Project Path="src/services/Catalog.Api/Catalog.Api.csproj" />
+    <Project Path="src/services/Inventory.Api/Inventory.Api.csproj" />
+    <Project Path="src/services/Orders.Api/Orders.Api.csproj" />
+    <Project Path="src/services/Payments.Api/Payments.Api.csproj" />
+  </Folder>
+</Solution>

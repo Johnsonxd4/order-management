@@ -1,0 +1,173 @@
+{
+  "realm": "ecommerce-platform",
+  "enabled": true,
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "duplicateEmailsAllowed": false,
+  "resetPasswordAllowed": true,
+  "rememberMe": true,
+  "roles": {
+    "realm": [
+      { "name": "customer", "description": "Customer storefront access" },
+      { "name": "catalog-manager", "description": "Catalog operations access" },
+      { "name": "inventory-manager", "description": "Inventory operations access" },
+      { "name": "order-manager", "description": "Order operations access" },
+      { "name": "finance-analyst", "description": "Finance and payment analytics access" },
+      { "name": "platform-admin", "description": "Full administration access" }
+    ]
+  },
+  "clients": [
+    {
+      "clientId": "customer-web",
+      "name": "Customer Web",
+      "enabled": true,
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "implicitFlowEnabled": false,
+      "redirectUris": [
+        "http://localhost:3001/*"
+      ],
+      "webOrigins": [
+        "http://localhost:3001"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      }
+    },
+    {
+      "clientId": "operations-web",
+      "name": "Operations Web",
+      "enabled": true,
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "implicitFlowEnabled": false,
+      "redirectUris": [
+        "http://localhost:3002/*"
+      ],
+      "webOrigins": [
+        "http://localhost:3002"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      }
+    },
+    {
+      "clientId": "admin-web",
+      "name": "Admin Web",
+      "enabled": true,
+      "publicClient": true,
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true,
+      "implicitFlowEnabled": false,
+      "redirectUris": [
+        "http://localhost:3003/*"
+      ],
+      "webOrigins": [
+        "http://localhost:3003"
+      ],
+      "attributes": {
+        "pkce.code.challenge.method": "S256"
+      }
+    }
+  ],
+  "users": [
+    {
+      "username": "customer.demo",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Camila",
+      "lastName": "Customer",
+      "email": "customer.demo@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "Customer#123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["customer"]
+    },
+    {
+      "username": "catalog.manager",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Carlos",
+      "lastName": "Catalog",
+      "email": "catalog.manager@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "Catalog#123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["catalog-manager"]
+    },
+    {
+      "username": "inventory.manager",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Iara",
+      "lastName": "Inventory",
+      "email": "inventory.manager@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "Inventory#123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["inventory-manager"]
+    },
+    {
+      "username": "order.manager",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Otavio",
+      "lastName": "Orders",
+      "email": "order.manager@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "Orders#123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["order-manager"]
+    },
+    {
+      "username": "finance.analyst",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Fernanda",
+      "lastName": "Finance",
+      "email": "finance.analyst@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "Finance#123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["finance-analyst"]
+    },
+    {
+      "username": "platform.admin",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Paula",
+      "lastName": "Admin",
+      "email": "platform.admin@example.com",
+      "credentials": [
+        {
+          "type": "password",
+          "value": "Admin#123",
+          "temporary": false
+        }
+      ],
+      "realmRoles": ["platform-admin"]
+    }
+  ]
+}
