@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "typecheck": "tsc --noEmit",
     "build": "vite build",
     "build:customer": "VITE_PORTAL_KIND=customer vite build",
     "build:operations": "VITE_PORTAL_KIND=operations vite build",
