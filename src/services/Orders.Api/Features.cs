@@ -194,7 +194,15 @@ public sealed class CatalogServiceClient(HttpClient httpClient)
 {
     public async Task<CatalogProductResponse?> GetProductAsync(string sku, CancellationToken cancellationToken)
     {
-        return await httpClient.GetFromJsonAsync<CatalogProductResponse>($"/api/products/{sku}", cancellationToken);
+        using var response = await httpClient.GetAsync($"/api/products/{sku}", cancellationToken);
+
+        if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+        {
+            return null;
+        }
+
+        response.EnsureSuccessStatusCode();
+        return await response.Content.ReadFromJsonAsync<CatalogProductResponse>(cancellationToken: cancellationToken);
     }
 }
 
